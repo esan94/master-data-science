@@ -4,4 +4,6 @@ Hello World GitHub!
 
 Changing Readme on website
 
+At this line will happen a conflict
+
 Looking for a conflict
