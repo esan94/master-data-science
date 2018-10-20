@@ -1,0 +1,19 @@
+1. Go to data/shell/ directory and use less to open Finn.txt
+% less Finn.txt
+	a) Locate the lines starting with "The"
+	Inside the interactive shell press / and then ^The
+	b) Locate the lines ending with "works"
+	For this time, /works$
+To find next words press n, and for previous words press N
+
+2. Open ~ /Data/opentraveldata/optd_aircraft.csv with less command. Search for "Canada" and then search for "Puma"
+Same metodology than previous exercise
+
+3. Use help to find out how to get the list of subdirectories limited to 2 sublevels by using "tree" command
+First of al I need to install the command using:
+% sudo apt-get tree
+Next I have use:
+%man tree
+to open the manual about tree command. Then I found out:
+%tree -L 2
+the number 2 is the maximun depth level of the tree
