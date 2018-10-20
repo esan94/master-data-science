@@ -1,9 +1,9 @@
-# master-data-science
+# Master Data Science
 
 Hello World GitHub!
 
-Changing Readme on website
+In this repository I will be posting all the habilities that I am going to acquire
 
-At this line will happen a conflict
+Come on go in and enjoy!
 
-Looking for a conflict
+Just let magic happen (;
