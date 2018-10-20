@@ -1,0 +1,10 @@
+1. Save the information of 3 largest files located insede ~ /data/us_dot/otp/ into a three_largest_file.txt
+2. Save last 20 commands used at command line to a file
+3. Print first 3 lines of ~ /Text_example.txt
+4. Print content of ~ /Text_example.txt except first 2 and last 3 lines
+5. How mnany linbes does ~ Data/opentraveldata/optd_aircraft.csv file have?
+6. How many words do first 5 lines of the ~/Data/shell/Finn.txt have?
+
+To get the command I did:
+%history -30 > last30.txt
+%tail -n +6 last30.txt > ../../Repos/master-data-science/linux-shell/quick_exercise_3_command.txt

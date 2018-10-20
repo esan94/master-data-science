@@ -1,0 +1,25 @@
+  474  cd Data/us_dot/otp
+  475  ls
+  476  rm three_largest_file.txt twenty_last_command.txt
+  477  ls
+  478  ls -sl
+  479  ls -slr
+  480  ls -sL
+  481  ls -Ls
+  482  ls -sS
+  483  ls -sS | tail -n +2
+  484  ls -sS | tail -n +2 | head -n 3
+  485  ls -sS | tail -n +2 | head -n 3 > three_largest_file.txt
+  486  history -20
+  487  history -20 > twenty_last_command.txt
+  488  cd 
+  489  cd Data/shell
+  490  head -3 Text_example.txt
+  491  cat -n Text_example.txt | tail -n +3 | head -n -3
+  492  cd ..
+  493  cd opentraveldata
+  494  wc -l optd_aircraft.csv
+  495  cd ..
+  496  cd shell
+  497  head -5 Finn.txt | wc -w
+  498  historify -30 > last30.txt

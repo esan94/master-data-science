@@ -1,0 +1,520 @@
+    1  ls
+    2  mkdir Repos
+    3  cd Repos
+    4  history
+    5  cat ../.history
+    6  git clone https://github.com/wireservice/csvkit.git
+    7  cd csvkit
+    8  ls
+    9  git log
+   10  cd ..
+   11  cd
+   12  psql -l
+   13  psql
+   14  psql postgres
+   15  pyspark
+   16  R
+   17  rstudio
+   18  sudo chmod -R a+rwx /media/sf_vb_shared
+   19  sudo cp -r /media/sf_vb_shared/Data .
+   20  ls -hl
+   21  sudo chown -R dsc:dsc Data
+   22  du -hs Data
+   23  ls Data
+   24  find DA
+   25  find Data
+   26  df -h
+   27  blueman--ma
+   28  blueman-manager
+   29  gsettings get org.blueman.transfer shared-path\n\n
+   30  gsettings get org.blueman\n\n
+   31  blueman-services
+   32  cd /usr/local/spark
+   33  cd ..
+   34  ls
+   35  ls /home/dsc/Downloads
+   36  ls
+   37  ll spark
+   38  cd
+   39  cd Downloads
+   40  ls
+   41  ll
+   42  tar zxvf spark-2.2.0-bin-hadoop2.7.tgz
+   43  ls
+   44  rm spark-2.2.0-bin-hadoop2.7.tgz
+   45  sudo mv spark-2.2.0-bin-hadoop2.7 /usr/local
+   46  cd /usr/local
+   47  ls
+   48  rm -rd spark-2.3.0-bin-hadoop2.7
+   49  sudo rm -rf spark-2.3.0-bin-hadoop2.7
+   50  sudo rm spark
+   51  sudo ln -s spark-2.2.0-bin-hadoop2.7 spark
+   52  l
+   53  cd
+   54  pyspark
+   55  rm Untitled.ipynb
+   56  pwd
+   57  ls
+   58  cd Repos
+   59  ls
+   60  cd csvkit
+   61  ls
+   62  cd ..
+   63  ls
+   64  cd ..
+   65  cd Repos
+   66  cd csvkit
+   67  ls
+   68  clear
+   69  cd 
+   70  cat .gitconfig
+   71  git config --global user.name="Esteban Sánchez"
+   72  git config --global user.name "Esteban Sánchez"
+   73  git config --global user.email emsg94@gmail.com
+   74  car .gitconfig
+   75  cat .gitconfig
+   76  ls
+   77  cd Repos
+   78  cd csvkit
+   79  d ..
+   80  cd ..
+   81  git clone https://github.com/esan94/master-data-science.git
+   82  ls
+   83  cd master-data-science
+   84  ls
+   85  cat README.md
+   86  gedit README.md
+   87  cat R
+   88  cat README.md
+   89  git status
+   90  git add README.md
+   91  git status
+   92  git commit -m "First commit on my repo"
+   93  git push
+   94  git log
+   95  git pull
+   96  git log
+   97  gedit README.md
+   98  git sttatus
+   99  git status
+  100  git add README.md
+  101  git commit -m "Conflict"
+  102  git push
+  103  git pull
+  104  gedit README.md
+  105  git status
+  106  git add README.md
+  107  git commit -m "Conflict fixed"
+  108  git push
+  109  whoami
+  110  echo Welcome to master
+  111  echo $HOME
+  112  printenv
+  113  echo  "world\nis mine"
+  114  BACKGROUND_COLOR=blue
+  115  printenv
+  116  BACKGROUND_COLOR=black
+  117  clear
+  118  echo "world" \\n"is mine"
+  119  echo "world" ; echo "two"
+  120  cat \etc\os-release
+  121  cat /etc/
+  122  cat /etc/os-release
+  123  cat -n /etc/os-release
+  124  cd Data/shell
+  125  ls
+  126  cat -n Finn.txt
+  127  echo $0
+  128  bash
+  129  df 
+  130  ls
+  131  pwd
+  132  cd airline_tickets
+  133  ls
+  134  cd ..
+  135  cd opentraveldata
+  136  ls
+  137  cat optd_airlines.csv
+  138  clear
+  139  ~
+  140  cd ~
+  141  cd Data/shell
+  142  cat Text_example.txt
+  143  cat ./Text_example.txt
+  144  ls
+  145  ls -a
+  146  cd ./
+  147  cat ./Text_example.txt
+  148  ~
+  149  cd ~
+  150  cd
+  151  ls
+  152  ls -1
+  153  ls -s
+  154  ls -s -1
+  155  ls -s1
+  156  ls -l
+  157  mkdir -p one/two/three
+  158  cd one/two/three
+  159  mkdir four five six
+  160  cd four
+  161  touch file
+  162  cp file file.txt
+  163  ls
+  164  ls -a
+  165  cd ..
+  166  ls
+  167  pwd
+  168  cd four
+  169  pwd
+  170  ls
+  171  cp -r five five_copy
+  172  cd ..
+  173  cp five five_copy
+  174  cp -r five five_copy
+  175  ls
+  176  touch file.txt
+  177  cp file.txt six
+  178  cd six
+  179  ls
+  180  cd ../four
+  181  ls
+  182  mv file file_moved
+  183  ls
+  184  cd ..
+  185  cd
+  186  mkdir first_dir
+  187  cd first_dir
+  188  touch text_file.tx
+  189  ls
+  190  ls -l text_file.tx
+  191  mv text_file.tx text_file.txt
+  192  ls
+  193  chmod g+x,o+w text_file.txt
+  194  ls -l
+  195  mkdir sub1 sub2 text_file
+  196  ls
+  197  cp text_file.txt sub1
+  198  ls
+  199  cd sub1
+  200  ls
+  201  mv text_file.txt ../sub2/text_file.txt.2
+  202  cd ../sub2
+  203  ls
+  204  cd ..
+  205  ls
+  206  cp text_file.txt sub1
+  207  rm text_file.txt
+  208  ls
+  209  cd sub1
+  210  ls
+  211  cd ..
+  212  cd sub2
+  213  ls
+  214  cd ..
+  215  cp -r sub1 sub3
+  216  ls
+  217  mv sub2/text_file.txt.2 sub2/text_file.txt.backup
+  218  cd sub2/ls
+  219  cd sub2/
+  220  ls
+  221  mv text_file.txt.backup ../.text_file.txt.backup
+  222  ls
+  223  cd ..
+  224  ls
+  225  ls -a
+  226  ls
+  227  rm sub2
+  228  rm -r sub2
+  229  ls
+  230  touch ej
+  231  ls -l ej
+  232  rm ej
+  233  cd ..
+  234  ls
+  235  cd Data/shell
+  236  ls
+  237  less Finn.txt
+  238  less -N Finn.txt
+  239  sudo apt-get install tree
+  240  tree
+  241  man tree
+  242  cat T Finn.txt
+  243  type ls
+  244  cd
+  245  gedit .zshrc
+  246  gs
+  247  alias
+  248  which python
+  249  whereis python
+  250  which python
+  251  python
+  252  sudo which python
+  253  sudo pthon
+  254  sudo python
+  255  cat \etc\os-release
+  256  cat /etc/os-release
+  257  du
+  258  df
+  259  history
+  260  history -20
+  261  echo $HISTFILE
+  262  cat -n .history
+  263  ls
+  264  cd D
+  265  cd Data/shell
+  266  ls
+  267  wc Finn.txt
+  268  cd ..
+  269  ls
+  270  wc shell
+  271  wc -r shell
+  272  wc --help
+  273  cd shell
+  274  ls
+  275  wc --files0-from=.txt
+  276  wc --files0-from=-
+  277  wc --files0-from=F
+  278  wc --files0-from=Finn.txt
+  279  head Finn.txt
+  280  tail Finn.txt
+  281  echo "one twho" | wc
+  282  head -n -5 Text_example.txt | cat -n
+  283  head -n -10 Text_example.txt | cat -n
+  284  cd 
+  285  cd Data/us_dot/otp
+  286  ls
+  287  ls -sS
+  288  ls -sS | head -n 3 > three_largest_file.txt
+  289  ls
+  290  cat three_largest_file.txt
+  291  ls -sS | head -n 3
+  292  ls -lS | head -n 3
+  293  ls -lS | head -n 4 | tail -n 3
+  294  ls -lS | head -n 4 | tail -n 3 > three_largest_file.txt
+  295  ls
+  296  cat three_largest_file.txt
+  297  history
+  298  tail -n 20 history > twenty_last_command.txt
+  299  history | tail -n 20 > twenty_last_command.txt
+  300  cat twenty_last_command.txt
+  301  wc twenty_last_command.txt
+  302  history | tail -20 > twenty_last_command.txt
+  303  wc twenty_last_command.txt
+  304  history | tail -24 > twenty_last_command.txt
+  305  wc twenty_last_command.txt
+  306  history | tail -20 > twenty_last_command.txt
+  307  wc twenty_last_command.txt
+  308  history
+  309  history -20 | tail -20 > twenty_last_command.txt
+  310  wc twenty_last_command.txt
+  311  cd
+  312  ls
+  313  ls -a
+  314  cd Data/shell
+  315  head -n 3 Text_example.txt
+  316  cat -n | tail -n +3
+  317  cat -n Text_example.txt | tail -n +3
+  318  cat -n Text_example.txt | tail -n +3 | head -n +
+  319  cat -n Text_example.txt | tail -n +3 | head -n + 3
+  320  cat -n Text_example.txt | tail -n +3 | head -n +3
+  321  cat -n Text_example.txt | tail -n +3 | head -n -3
+  322  cd ..
+  323  cd opentraveldata
+  324  ls
+  325  wc optd_aircraft.csv
+  326  cd ..
+  327  cd shell
+  328  head -n -5 Finn.txt
+  329  head -n 5 Finn.txt
+  330  head -n 5 Finn.txt | wc
+  331  pwd
+  332  find
+  333  cd..
+  334  cd ..
+  335  find . name "text*"
+  336  find . name "^text*"
+  337  find . -name "^text*"
+  338  find -name "^text*"
+  339  find -name "text*"
+  340  find -name "Readme"
+  341  find -name "Read"
+  342  ls
+  343  .
+  344  ..
+  345  cd .
+  346  cd ls
+  347  ls
+  348  cd ..
+  349  ls
+  350  zsh
+  351  ll
+  352  cd Repos
+  353  ls
+  354  cd master-data-science
+  355  alias gs="git status"
+  356  gs
+  357  git pull
+  358  ls
+  359  gedit README.md
+  360  mkdir linux-shell
+  361  ls
+  362  cd linux-shell
+  363  touch README.md
+  364  cd ..
+  365  gedit README.md
+  366  cd linux-shell
+  367  gedit README.md
+  368  cd ..
+  369  cd 
+  370  ls
+  371  rm first_dir
+  372  rm -r first_dir
+  373  ls
+  374  mkdir first_dir
+  375  touch first_dir/text_file.txt
+  376  chmod g+x,o+w first_dir/text_file.txt
+  377  cd first_dir
+  378  mkdir sub1 sub2 text_file
+  379  cp text_file.txt sub1
+  380  mv text_file.txt sub2/text_file.txt.2
+  381  cp -r sub1 sub3
+  382  ls -lS
+  383  mv sub2/text_file.txt.2 sub2/text_file.txt.backup
+  384  mv sub2/text_file.txt.2 ./.text_file.txt.backup
+  385  mv sub2/text_file.txt.backup ./.text_file.txt.backup
+  386  rm -r sub2
+  387  history
+  388  history | tail -n -4
+  389  history | tail -n 4
+  390  history | head -n -16
+  391  history | head -n 16
+  392  history -25 | head -n 16
+  393  history -25 | head -n 25
+  394  history -25 | head -n 25 > last_25_hist.txt
+  395  head last_25_hist.txt
+  396  head -n -5 last_25_hist.txt
+  397  head -n 5 last_25_hist.txt
+  398  rail -n 5 last_25_hist.txt
+  399  tal -n 5 last_25_hist.txt
+  400  tail -n 5 last_25_hist.txt
+  401  tail -n -5 last_25_hist.txt
+  402  tail -n +5 last_25_hist.txt
+  403  tail -n +6 last_25_hist.txt
+  404  tail -n +6 last_25_hist.txt | head 12
+  405  tail -n +6 last_25_hist.txt | head -12
+  406  tail -n +6 last_25_hist.txt | head -13
+  407  ls
+  408  tail -n +6 last_25_hist.txt | head -13 > quick_exercise_1_command.txt
+  409  cp quick_exercise_1_command.txt last_25_hist.txt ../Repos/master-data-science/linux-shell/
+  410  cd ../Repos/master-data-science/linux-shell
+  411  ls
+  412  rm last_25_hist.txt
+  413  ls
+  414  touch quick_exercise_1_statement.txt
+  415  gedit quick_exercise_1_statement.txt
+  416  gs
+  417  ls
+  418  cd ..
+  419  gs
+  420  ls
+  421  git add linux-shell/
+  422  git commit -m "linux-shell"
+  423  git push
+  424  cd ../..
+  425  cd Data/shell
+  426  less Finn.txt
+  427  cd ..
+  428  cd opentraveldata
+  429  less optd_aircraft.csv
+  430  man tree
+  431  tress
+  432  tree
+  433  cd ..
+  434  tree
+  435  cd ..
+  436  ls
+  437  cd ..
+  438  ls
+  439  cd dsc
+  440  help tree
+  441  tree help
+  442  tree --h
+  443  tree -h
+  444  man tress
+  445  man tree
+  446  tree -L 2
+  447  man tree
+  448  tree -L 2 -T Tree
+  449  cd Repos
+  450  tree -L 2 -T Tree
+  451  tree -L 2 -T "Title"
+  452  man tree
+  453  tree -L 2 -R
+  454  tree -L 2 
+  455  cd master-data-science
+  456  ls
+  457  cd linux-shell
+  458  ls
+  459  touch quick_exercise_2_statemen_solutions.txt
+  460  gedit quick_exercise_2_statemen_solutions.txt
+  461  cd ..
+  462  gs
+  463  ls
+  464  cd linux-shell
+  465  mv quick_exercise_2_statemen_solutions.txt quick_exercise_2_statement_solutions.txt
+  466  ls
+  467  ll
+  468  cd ..
+  469  gs
+  470  git add linux-shell/quick_exercise_2_statement_solutions.txt
+  471  git commit -m "Exercise 2"
+  472  git push
+  473  cd ..
+  474  cd Data/us_dot/otp
+  475  ls
+  476  rm three_largest_file.txt twenty_last_command.txt
+  477  ls
+  478  ls -sl
+  479  ls -slr
+  480  ls -sL
+  481  ls -Ls
+  482  ls -sS
+  483  ls -sS | tail -n +2
+  484  ls -sS | tail -n +2 | head -n 3
+  485  ls -sS | tail -n +2 | head -n 3 > three_largest_file.txt
+  486  history -20
+  487  history -20 > twenty_last_command.txt
+  488  cd 
+  489  cd Data/shell
+  490  head -3 Text_example.txt
+  491  cat -n Text_example.txt | tail -n +3 | head -n -3
+  492  cd ..
+  493  cd opentraveldata
+  494  wc -l optd_aircraft.csv
+  495  cd ..
+  496  cd shell
+  497  head -5 Finn.txt | wc -w
+  498  historify -30 > last30.txt
+  499  history -30 > last30.txt
+  500  less last30.txt
+  501  tail -n +6 last30.txt
+  502  tail -n +6 last30.txt > ../../Repos/master-data-science/linux-shell/quick_exercise_3_command.txt
+  503  cd ../../Repos/master-data-science/linux-shell
+  504  touch quick_exercise_3_statement.txt
+  505  gedit quick_exercise_3_statement.txt
+  506  gs
+  507  man history
+  508  help history
+  509  which history
+  510  where history
+  511  cd ..
+  512  ls
+  513  ls -a
+  514  less .zsh_history
+  515  less .zshrc
+  516  historu
+  517  history
+  518  history 517
+  519  history -517
+  520  history -520
