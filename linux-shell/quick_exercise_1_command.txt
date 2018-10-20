@@ -1,0 +1,13 @@
+  374  mkdir first_dir
+  375  touch first_dir/text_file.txt
+  376  chmod g+x,o+w first_dir/text_file.txt
+  377  cd first_dir
+  378  mkdir sub1 sub2 text_file
+  379  cp text_file.txt sub1
+  380  mv text_file.txt sub2/text_file.txt.2
+  381  cp -r sub1 sub3
+  382  ls -lS
+  383  mv sub2/text_file.txt.2 sub2/text_file.txt.backup
+  384  mv sub2/text_file.txt.2 ./.text_file.txt.backup
+  385  mv sub2/text_file.txt.backup ./.text_file.txt.backup
+  386  rm -r sub2

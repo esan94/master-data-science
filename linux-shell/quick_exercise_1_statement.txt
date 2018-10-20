@@ -1,0 +1,17 @@
+1. Create a directory "first_dir" in your home folder
+2. Create an emptu file "textfile.txt inside "first_dir" directory
+3. Add execute permissions to group users, and write permissions to other users to "text_file"
+4. Create 3 subdirectories inside "first_dir": "sub1", "sub2", "text_file"
+5. Copy the "text_file.txt" file into "sub1" directory
+6. Move the "text_file.txt" into sub2 under name "text_file.txt.2"
+7. Copy the whole directory "sub1" to "sub3" directory
+8. Change filen name of "firstdir/sub2/text_file.txt.2" to "first_dir_/sub2/text_file.txt.backup"
+9. Move "first_dir/sub2/text_file.txt.backup" to "first_dir" directory as hidden file
+10. Delete the "sub2" subdirectory
+
+To give the result of these quick exercises I have use, after some tries:
+% history -25 | head -n 25 > last_25.txt
+for make static the last 25 commands
+% tail -n +6 last_25_hist.txt | head -13 > quick_exerceise_1_command.txt
+% cp quick_exercise_1_command.txt ../Repos/master-data-science/linux-shell/
+
