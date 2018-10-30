@@ -1,0 +1,5 @@
+1. Use grep to extract all 7x7 airplane moedls from optd_aircraft.csv
+2. use grep to extract all 3xx airplane models from optdaircraft.csv
+3. Use grep to obtain the number of airlines with prefix "aero" (case insensitive) in their name from optd_airlines.csv
+4. How many optd_por_public.csv columns have "name" as part of their name? What are their numerical positions?
+5. Find all files with txt extensions inside home directory that have word "Science" (case insensitive) inside the content. Print file path and the line containing the science word

@@ -1,0 +1,4 @@
+1. Create a script that will return column names together with their column number from the csv files. The first argument should be file name and the second delimiter
+2. Create a script that accepts a CSV filename as input and retunrs the model of the aircraft with the highest number of engines
+3. Repeat script 1, but add a second argument to accept number of a column with the number of engines. If several planes have the highest number of engines, then the script will only show one of them
+4. Create a script that accepts as input arguments the name of the csv file, and number (number of engines) and return number of aircraft that have that number of engines

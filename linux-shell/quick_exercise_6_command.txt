@@ -1,0 +1,50 @@
+ 1025  head -1 optd_aircraft.csv
+ 1026  cut -d "^" -f 3 | grep -E "7[0-9]7"
+ 1027  cut -d "^" -f 3 optd_aircraft.csv| grep -E "7[0-9]7"
+ 1028  cut -d "^" -f 3 optd_aircraft.csv| grep -E "3[0-9]{2}"
+ 1029  head -1 optd_aircraft.csv
+ 1030  head -1 optd_airlines.csv
+ 1031  cut -d "^" -f 8 optd_airlines.csv| grep -Ei "%aero%"
+ 1032  cut -d "^" -f 8 optd_airlines.csv| grep -Ei "^aero^"
+ 1033  cut -d "^" -f 8 ./optd_airlines.csv | grep -i -E "^Aero" 
+ 1034  cut -d "^" -f 8 ./optd_airlines.csv | grep -i -E -n "^Aero" 
+ 1035  cut -d "^" -f 8 ./optd_airlines.csv | grep -i -E -n "^aero" 
+ 1036  cut -d "^" -f 8 ./optd_airlines.csv | grep -i -E -n "^aero" | wc -l
+ 1037  cd ..
+ 1038  ls
+ 1039  cd ..
+ 1040  ls
+ 1041  cd MyScripts
+ 1042  ls
+ 1043  cd ..
+ 1044  ls
+ 1045  cd Data/opentraveldata
+ 1046  ls
+ 1047  csv_column_numbers optd_por_public.csv "^"
+ 1048  csv_column_numbers.sh optd_por_public.csv "^"
+ 1049  csv_column_numbers optd_por_public.csv "^" | grep -E "[:name:]"
+ 1050  csv_column_numbers optd_por_public.csv "^" | grep -E "[%name%]"
+ 1051  csv_column_numbers optd_por_public.csv "^" | grep -E "name"
+ 1052  csv_column_numbers.sh optd_por_public.csv "^" | grep -E "name"
+ 1053  csv_column_numbers.sh optd_por_public.csv "^" | grep  "name"
+ 1054  cd
+ 1055  man find
+ 1056  find --help
+ 1057  cd
+ 1058  man find
+ 1059  find -type f -iname ".txt$"
+ 1060  find -type f -iname "[.txt$]"
+ 1061  find -type f -iname "[.txt&]"
+ 1062  find -type f -iname "[.txt%]"
+ 1063  find -iname "[.txt%]"
+ 1064  find -iname "[.txt$]"
+ 1065  find -iname ".txt"
+ 1066  find -iname ".txt$"
+ 1067  find -iname "[.txt$]"
+ 1068  find --help
+ 1069  find . -typo f -iname "*.txt"
+ 1070  find . -type f -iname "*.txt"
+ 1071  find . -type f -iname "*.txt" | grep -Ein "science"
+ 1072  find . -type f -iname "*.txt" | grep -Ein "sciencE"
+ 1073  find . -type f -iname "*.txt" | grep -Ein "sci"
+ 1074  history -50

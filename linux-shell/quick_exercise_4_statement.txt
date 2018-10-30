@@ -1,0 +1,12 @@
+1. Find top 10 file by seize in your home directory including the subdirectories. Sort them by size and print the result includin the size and the name of the file
+2. Create a dummy file with this commando seq 15<20lines.txt; seq 9 1 20 >> 20lines.txt; echo "20\n20">>20line.txt
+	a) Sort the lines of the file based on alphanumeric characters
+	b) Sort the liunes of the file based on numeric values and eliminate the duplicates
+	c) Print just duplicated lines
+	d) Print the line which has more reps
+	e) Print unique lines with the number of repetitios sorted by the number of repetitios from lowest to highest
+3. Create another file with this command: seq 0 2 40 < 20lines2.txt
+	a) Create 3rd file comibininf the first two files but without duplicates
+	b) Merge both content in 40lines.txt. Print unique lines together with the number of ocurrences of 40lines.txt file and sorte the line based on line content.
+	c) How would you get the same result without passing through the intermediary file 40lines.txt?
+4. Go to /Data/opentraveldata get the line with the highest number of engines from optd_aircraft.csv using sort

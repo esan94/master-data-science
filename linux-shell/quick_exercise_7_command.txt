@@ -1,0 +1,31 @@
+ 1091  cat Text_example.txt | sed s/line/\n
+ 1092  sed s/line/\n Text_example.txt
+ 1093  sed 's/line/\n' Text_example.txt
+ 1094  sed s/line//n/g Text_example.txt
+ 1095  ls
+ 1096  sed s/line//n/g Text_example.txt
+ 1097  sed 's/line//n/g' Text_example.txt
+ 1098  echo Sunday.day | sed s/day/night/g -I
+ 1099  echo Sunday.day | sed s/day/night/gI
+ 1100  cat Text_example.txt | sed s/line/\n/g
+ 1101  cat Text_example.txt | sed s/line/\n/gI
+ 1102  cat Text_example.txt | sed s/line/\\n/gI
+ 1103  cat Text_example.txt | sed 'line/d'
+ 1104  cat Text_example.txt | sed '/line/d'
+ 1105  cat Text_example.txt | sed '/line/dI'
+ 1106  cat Text_example.txt | sed '/line/d/I'
+ 1107  cat Text_example.txt | sed -! '/line/d'
+ 1108  cat Text_example.txt | sed -n '/line/d'
+ 1109  cat Text_example.txt | sed  '/line/!d'
+ 1110  cat Text_example.txt | sed  -np '/line/!d'
+ 1111  cat Text_example.txt | sed  '/line/!d'
+ 1112  cat Text_example.txt | sed  '/line/d'
+ 1113  cat Text_example.txt | sed -n '/line/d'
+ 1114  cat Text_example.txt | sed -n '/line/dp'
+ 1115  cat Text_example.txt | sed -n '/line/pd'
+ 1116  cat Text_example.txt | sed -n '/line/p'
+ 1117  cat Text_example.txt | sed -n '/line/!p'
+ 1118  cat Text_example.txt | sed '/line/!p'
+ 1119  history -15
+ 1120  history -30
+ 1121  history -40

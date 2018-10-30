@@ -1,0 +1,5 @@
+1. Go to /Data/us_dot/otp Show the content o one of the files
+2. Use head/tail with zcat command. Any difference in time execution?
+3. Compress "optd_por_public.csv" with bzip2 and then extract from the compressed file all the lines starting with MAD
+4. On_Time_On_Time-.Performance-.2015_1.zip What are the olumns numbers of columns having "carrier" in the name?
+5. On_Time_On_Time-.Performance-.2015_1.zip Print to scree, one file per line, the header, and first line of the T100 file, side by sde

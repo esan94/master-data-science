@@ -1,0 +1,4 @@
+Use Text_example.txt
+1. Replace every line" with new line character ("\n")
+2. Delete lines that contain the "line" word
+3. Print only he lines that don't contain the "line" word

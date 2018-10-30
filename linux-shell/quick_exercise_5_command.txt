@@ -1,0 +1,30 @@
+  984  cd 
+  985  cd Data/opentraveldata
+  986  cat optd_aircraft.csv|tr "^" ","
+  987  cat optd_aircraft.csv|tr "^" ","|head 10
+  988  cat optd_aircraft.csv|tr "^" ","|head -10
+  989  cat optd_aircraft.csv|tr [:blank:]
+  990  cat optd_aircraft.csv|tr "[:blank:]"
+  991  cat optd_aircraft.csv|tr "[:blank:]" "7"
+  992  cat optd_aircraft.csv|tr "[:alnum:]" "[:blank:]"
+  993  cat optd_aircraft.csv|tr "[:blank:]" "\n" | wc
+  994  cat optd_aircraft.csv
+  995  cat optd_aircraft.csv| tr -cd ""
+  996  cat optd_aircraft.csv| tr -cd " "
+  997  cat optd_aircraft.csv| tr -d " "
+  998  cat optd_aircraft.csv| tr -cd " " |wc -l
+  999  cat optd_aircraft.csv| tr -cd " " |wc
+ 1000  cat optd_aircraft.csv| tr -cd "[:blanck:]" |wc
+ 1001  cat optd_aircraft.csv| tr -cd "[:blank:]" |wc
+ 1002  cat optd_aircraft.csv| tr -cd "  " |wc
+ 1003  cat optd_aircraft.csv| tr -s "[:blank:]" |wc
+ 1004  head -1 optd_por_public.csv| tr "^" "\n" |wc -l
+ 1005  paste <(seq 46) <(head -1 optd_por_public.csv|tr "^" "\n")
+ 1006  head -1 optd_airlines.csv| tr "^" "\n" |wc -l
+ 1007  paste <(seq 14) <(head -1 optd_airlines.csv|tr "^" "\n")
+ 1008  sort -t "^" -k 14nr,14 optd_airlines.csv|head -1
+ 1009  head -5 optd_airlines.csv
+ 1010  histoy -50
+ 1011  history -50
+ 1012  history -30
+ 1013  history -30 < last30

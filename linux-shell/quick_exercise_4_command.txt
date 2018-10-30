@@ -1,0 +1,32 @@
+  923  cd 
+  924  find . -type f -size +50M -exec ls -s {} \; | sort -nr | head -10
+  925  find . -type f -size +50M -exec ls -s {} \;
+  926  find . -type f -size +50M -exec ls -s {} \; | sort -nr
+  927  find . -type f -size +50M -exec ls -s {} \; | sort -nr | head -n -10
+  928  ls
+  929  cd first_dir
+  930  seq 15 > 20lines.txt
+  931  seq 9 1 20 >> 20lines.txt
+  932  echo "20\n20" >> 20lines.txt
+  933  cat 20lines.txt
+  934  cat 20lines.txt | sort
+  935  cat 20lines.txt | sort -nu
+  936  cat 20lines.txt | uniq -d
+  937  cat 20lines.txt | uniq --repeated
+  938  cat 20lines.txt 
+  939  cat 20lines.txt | sort -n | uniq -d
+  940  cat 20lines.txt | uniq -c | sort -n | tail -1
+  941  cat 20lines.txt | uniq -c | sort -n
+  942  cat 20lines.txt | sort -n | uniq -c
+  943  cat 20lines.txt | sort -n | uniq -c | sort -n
+  944  seq 0 2 40 > 20lines2.txt
+  945  cat 20lines2.txt
+  946  paste -s 20lines
+  947  paste -s 20lines2.txt 20lines.txt
+  948  paste -s 20lines2.txt 20lines.txt | sort -nr |uniq
+  949  paste  20lines2.txt 20lines.txt | sort -nr |uniq
+  950  cd 
+  951  cd Data/opentraveldata
+  952  cat optd_aircraft.csv| head -1
+  953  sort -t "^" -k 7nr,7 optd_aircraft.csv
+  954  sort -t "^" -k 7nr,7 optd_aircraft.csv|head -1

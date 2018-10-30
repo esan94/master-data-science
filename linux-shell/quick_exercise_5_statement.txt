@@ -1,0 +1,6 @@
+1. Change the delimeter of optd_aircraft.csv to ","
+2. Check if optd_por_public.csv has repeated white spaces
+3. How many columns has optd_por_public.csv?
+4. Print column name of optd_por_public.csv together with their column number
+5. Use optd_airlines.csv to obtain the airline with the most floghts
+6. Use optd_airlines.csv to obtain number of arilines in each alliance

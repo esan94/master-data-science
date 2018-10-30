@@ -1,0 +1,14 @@
+ 1192  csvstat -d "^" optd_aircraft.csv
+ 1193  csvcut -d "^" -c 2 optd_aircraft.csv | uniq | wc -l
+ 1194  csvcut -d "^" -c 2 optd_aircraft.csv|sort | uniq | wc -l
+ 1195  csvcut -d "^" -c 2 optd_aircraft.csv|sort -n | uniq | wc -l
+ 1196  csvcut -d "^" -c 2 optd_aircraft.csv|sort -n
+ 1197  csvcut -d "^" -c 2 optd_aircraft.csv|sort -n|uniq -c
+ 1198  csvcut -d "^" -c 2 optd_aircraft.csv|sort -n|uniq -c |sort -n
+ 1199  csvcut -d "^" -c 2 optd_aircraft.csv|sort -n|uniq -c |sort -n| tail -5
+ 1200  csvgrep -d "^" -c 2 "Airbus" optd_aircraft.csv
+ 1201  csvgrep -d "^" -c 2 -m "Airbus" optd_aircraft.csv
+ 1202  csvgrep -d "^" -c 2 -m "Airbus" optd_aircraft.csv |tr "," "|" > airbus.txt
+ 1203  less airbus.txt
+ 1204  history -15
+ 1205  history -14

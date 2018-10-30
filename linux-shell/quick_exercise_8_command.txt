@@ -1,0 +1,31 @@
+ 1131  unzip -p On_Time_On_Time_Performance_2015_1.zip
+ 1132  ls
+ 1133  zcat On_Time_On_Time_Performance_2015_1.zip|head -1
+ 1134  zcat On_Time_On_Time_Performance_2015_1.zip|head -2
+ 1135  cd ..
+ 1136  ls
+ 1137  cd ../Data/opentraveldata
+ 1138  ls
+ 1139  bzip2 --help
+ 1140  bzip2 optd_por_public.csv
+ 1141  ls
+ 1142  bzcat -d optd_por_public.csv.bz2|grep -E "^MAD"
+ 1143  ls
+ 1144  bzcat  optd_por_public.csv.bz2|head -1
+ 1145  cd ..
+ 1146  ls
+ 1147  cd Data/us_dot
+ 1148  cd otp
+ 1149  ls
+ 1150  zcat On_Time_On_Time_Performance_2015_1.zip|head -a
+ 1151  zcat On_Time_On_Time_Performance_2015_1.zip|head -1
+ 1152  zcat On_Time_On_Time_Performance_2015_1.zip|head -1|tr "," "\n"
+ 1153  zcat On_Time_On_Time_Performance_2015_1.zip|head -1|tr "," "\n"|grep -n "carrier"
+ 1154  zcat On_Time_On_Time_Performance_2015_1.zip|head -1|tr "," "\n"|grep -nE "carrier"
+ 1155  zcat On_Time_On_Time_Performance_2015_1.zip|head -1|tr "," "\n"|grep -nE "A"
+ 1156  zcat On_Time_On_Time_Performance_2015_1.zip|head -1|tr "," "\n"|grep -nE "carr"
+ 1157  zcat On_Time_On_Time_Performance_2015_1.zip|head -1|tr "," "\n"|grep -niE "carr"
+ 1158  zcat On_Time_On_Time_Performance_2015_1.zip|head -1|tr "," "\n"|grep -niE "carrier"
+ 1159  history -25
+ 1160  history -40
+ 1161  history -30
