@@ -1,0 +1,4 @@
+1. Add phone and username columns to your Facebook table
+2. What is the content of these two columns after their creation?
+3. Update the phone number of all of your facebook friends
+4. All your Facebook friends use their email as user name, so tha both columns coincide. How can you take advantage of this fact when updating the user name column

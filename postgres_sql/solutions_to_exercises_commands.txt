@@ -1,0 +1,75 @@
+DELETE facebook;
+DROP TABLE facebook;
+\d
+CREATE TABLE facebook (name  VARCHAR, age INT, residence VARCHAR, email VARCHAR);
+INSERT INTO facebook VALUES ('aaa',17, 'Madrid', 'aaa@aaa.com');
+select * from facebook;
+INSERT INTO facebook VALUES ('bbb',22,'Alicante','bbb@bbb.com'),('ccc',78,'Madrid','ccc@ccc.com');
+INSERT INTO facebook VALUES ('ddd',18,'Getafe','ddd@ddd.com'),('eee',66,'Madrid','eee@eee.com');
+SELECT * WHERE age < 18 AND age > 65;
+SELECT * FROM facebook WHERE age < 18 AND age > 65;
+SELECT * FROM facebook WHERE age<18 AND age>65;
+SELECT * FROM facebook WHERE age<18 ;
+SELECT * FROM facebook WHERE age<18 WHERE age>65;
+SELECT * FROM facebook WHERE age<18 OR age>65;
+SELECT * FROM facebook WHERE UPPER(residence)!='MADRID';
+ALTER TABLE facebook ADD PRIMARY KEY (email);
+ALTER TABLE facebook ADD COLUMN phone VARCHAR, ADD COLUMN username VARCHAR;
+SELECT * FROM facebook;
+ALTER TABLE facebook SET username=email;
+UPDATE facebook SET phone='000000000' WHERE name='aaa';
+select * FRom facebook;
+UPDATE facebook SET phone='111111111' WHERE name='bbb';
+UPDATE facebook SET phone='222222222' WHERE name='ccc';
+UPDATE facebook SET phone='444444444' WHERE name='eee';
+SELECT * FROM facebook;
+UPDATE facebook SET email=username;
+UPDATE facebook SET username=email;
+\d facebook
+SELECT * FROM facebook;
+\! pwd
+\l
+\! ll
+\! ls
+\cd ..
+\! pwd
+\cd ../../Data/opentraveldata/
+CREATE TABLE optd_airlines ( pk VARCHAR NOT NULL,  env_id BOOLEAN,  validity_from DATE,  validity_to VARCHAR,  "3char_code" VARCHAR,  "2char_code" VARCHAR,  num_code DECIMAL,  name VARCHAR,  name2 VARCHAR,  alliance_code VARCHAR,  alliance_status VARCHAR,  type VARCHAR,  wiki_link VARCHAR,  flt_freq DECIMAL);
+\copy optd_airlines from './optd_airlines.csv' delimeter '^' csv header
+\copy optd_airlines from './optd_airlines.csv' -d '^' csv header
+SELECT * FROM friends WHERE upper(nombre) LIKE '%A%';
+UPDATE facebook SET phone='444444444' WHERE name='eee';
+\l
+\d
+SELECT * FROM optd_airlines;
+\! pwd
+\! ls
+\copy optd_airlines './optd_airlines.csv' '^' csv header;
+\copy optd_airlines FROM './optd_airlines.csv' DELIMETERS'^' csv header;
+\copy optd_airlines FROM './optd_airlines.csv' DELIMETERS'^' csv header;
+COPY optd_airlines FROM './optd_airlines.csv' DELIMETER '^' CSV H
+\copy optd_airlines FROM './optd_airlines.csv' DELIMETERS'^' csv header;
+COPY optd_airlinesFROM './optd_airlines.csv'DELIMITER '^'CSV HEADER;
+\! pwd
+/ls;
+\l
+/l;
+\!cat ./optd_airlines.csv
+COPY optd_airlinesFROM './optd_airlines.csv'DELIMITER '^'CSV HEADER;
+COPY optd_airlinesFROM './optd_airlines.csv'DELIMITER '^'CSV HEADER;
+COPY optd_airlinesFROM 'optd_airlines.csv'DELIMITER '^'CSV HEADER;
+\copy optd_airlines
+\copy optd_airlines from './optd_airlines.csv' delimiter '^' csv header;
+SELECT * FROM optd_airlines LIMIT 1;
+\! csvsql -d "^" -i postgersql optd_aircraft.csv
+\! csvsql -d "^" -i postgresql optd_aircraft.csv
+CREATE TABLE optd_aircraft ( iata_code VARCHAR NOT NULL,  manufacturer VARCHAR,  model VARCHAR NOT NULL,  iata_group VARCHAR,  iata_category VARCHAR,  icao_code VARCHAR,  nb_engines DECIMAL,  aircraft_type VARCHAR);
+\copy optd_aircraft from './optd_aircraft.csv' delimiter '^' csv header;
+SELECT * FROM optd_aircraft ORDER BY nb_engines DESC LIMIT 5;
+SELECT * FROM optd_aircraft ORDER BY nb_engines ASC LIMIT 5;
+SELECT * FROM optd_aircraft ORDER BY nb_engines DESC WHERE nb_engines IS NOT NULL LIMIT 5;
+SELECT * FROM optd_aircraft WHERE nb_engines IS NOT NULL  ORDER BY nb_engines DESC LIMIT 5;
+\d optd_aircraft
+SELECT nb_engines, COUNT(nb_engines) AS total FROM optd_aircraft WHERE nb_engines IS NOT NULL GROUP BY nb_engines ORDER BY total DESC;
+SELECT nb_engines, COUNT(nb_engines) AS total FROM optd_aircraft WHERE nb_engines IS NOT NULL;
+SELECT COUNT(nb_engines) AS total FROM optd_aircraft WHERE nb_engines IS NOT NULL;

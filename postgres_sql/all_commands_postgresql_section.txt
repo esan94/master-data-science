@@ -1,0 +1,130 @@
+     1	\d
+     2	\l
+     3	\q
+     4	\! pwd
+     5	\! pwd
+     6	\cd Data
+     7	\! pwd
+     8	oneline;
+     9	\l
+    10	\d
+    11	create database networking;
+    12	\l
+    13	\c networking
+    14	CREATE TABLE friends (nombre VARCHAR,edad INT,email VARCHAR);
+    15	\d
+    16	\d friends
+    17	INNSERT INTO friends VALUES ('Lionel Messi', 30, 'pulguita_hormonada@valors.com');
+    18	INSERT INTO friends VALUES ('Lionel Messi', 30, 'pulguita_hormonada@valors.com');
+    19	INSERT INTO friends VALUES ('Donald Trump', 71, 'naranjito@eeuu.com');
+    20	INSERT INTO friends VALUES ('CR7', , 'maisgguapo@juventus.it');
+    21	INSERT INTO friends VALUES ('CR7',  'maisgguapo@juventus.it');
+    22	INSERT INTO friends VALUES ('CR7',, 'maisgguapo@juventus.it');
+    23	INSERT INTO friends VALUES ('CR7',33, );
+    24	INSERT INTO friends VALUES ('CR7',33);
+    25	INSERT INTO friends (nombre,email) VALUES ('Zinedine Zidane', 'estamosbiensaes@champions.es');
+    26	SELECT * FROM friends;
+    27	SELECT * FROM friends WHERE edad!=300;
+    28	SELECT * FROM friends WHERE edad!=30;
+    29	SELECT * FROM friends WHERE edad!=30 OR NULL;
+    30	SELECT * FROM friends WHERE edad!=30;
+    31	SELECT * FROM friends WHERE nombre LIKE '%T%';
+    32	SELECT * FROM friends WHERE upper(nombre) LIKE '%T%';
+    33	SELECT * FROM friends WHERE upper(nombre) LIKE '%A%';
+    34	SELECT * FROM friends WHERE upper(nombre) LIKE '%a%';
+    35	SELECT * FROM friends WHERE lower(nombre) LIKE '%a%';
+    36	SELECT * FROM friends WHERE edad IS NULL;
+    37	CREATE TABLE facebook (name VARCHAR ,age INT,city VARCHAR,email VARCHAR);
+    38	INSERT INTO facebook VALUES ('Mario', 23, 'Conil', 'ab8mario@gmail.com'),('Marcos', 25, 'Madrid', 'wonreipi@gmail.com');
+    39	INSERT INTO facebook (name, city, email) VALUES ('Paloma', 'Conil', 'psannar@gmail.com') ;
+    40	INSERT INTO facebook VALUES ('Xesc', 24, 'Lloseta', 'xescripoll@gmail.es'),('Ana', 24, 'Segovia');
+    41	INSERT INTO facebook VALUES ('Xesc', 24, 'Lloseta', 'xescripoll@gmail.es');
+    42	INSERT INTO facebook VALUES('Ana', 24, 'Segovia');
+    43	SELECT * FROM facebook;
+    44	ALTER TABLE facebook ADD PRIMARY KEY (email);
+    45	ALTER TABLE facebook ADD PRIMARY KEY (name);
+    46	ALTER TABLE facebook ADD COLUMN telefono VARCHAR;
+    47	SELECT * FROM facebook;
+    48	\d facebook
+    49	ALTER TABLE facebook DROP COLUMN telefono VARCHAR;
+    50	ALTER TABLE facebook DROP COLUMN telefono ;
+    51	UPDATE facebook SET email='anasatr@ucm.es' WHERE name='Ana';
+    52	\d facebook
+    53	SELECT * FROM facebook;
+    54	\l
+    55	\d
+    56	DELETE facebook;
+    57	DROP TABLE facebook;
+    58	\d
+    59	CREATE TABLE facebook (name  VARCHAR, age INT, residence VARCHAR, email VARCHAR);
+    60	INSERT INTO facebook VALUES ('aaa',17, 'Madrid', 'aaa@aaa.com');
+    61	select * from facebook;
+    62	INSERT INTO facebook VALUES ('bbb',22,'Alicante','bbb@bbb.com'),('ccc',78,'Madrid','ccc@ccc.com');
+    63	INSERT INTO facebook VALUES ('ddd',18,'Getafe','ddd@ddd.com'),('eee',66,'Madrid','eee@eee.com');
+    64	SELECT * WHERE age < 18 AND age > 65;
+    65	SELECT * FROM facebook WHERE age < 18 AND age > 65;
+    66	SELECT * FROM facebook WHERE age<18 AND age>65;
+    67	SELECT * FROM facebook WHERE age<18 ;
+    68	SELECT * FROM facebook WHERE age<18 WHERE age>65;
+    69	SELECT * FROM facebook WHERE age<18 OR age>65;
+    70	SELECT * FROM facebook WHERE UPPER(residence)!='MADRID';
+    71	ALTER TABLE facebook ADD PRIMARY KEY (email);
+    72	ALTER TABLE facebook ADD COLUMN phone VARCHAR, ADD COLUMN username VARCHAR;
+    73	SELECT * FROM facebook;
+    74	ALTER TABLE facebook SET username=email;
+    75	UPDATE facebook SET phone='000000000' WHERE name='aaa';
+    76	select * FRom facebook;
+    77	UPDATE facebook SET phone='111111111' WHERE name='bbb';
+    78	UPDATE facebook SET phone='222222222' WHERE name='ccc';
+    79	UPDATE facebook SET phone='444444444' WHERE name='eee';
+    80	SELECT * FROM facebook;
+    81	UPDATE facebook SET email=username;
+    82	UPDATE facebook SET username=email;
+    83	\d facebook
+    84	SELECT * FROM facebook;
+    85	\! pwd
+    86	\l
+    87	\! ll
+    88	\! ls
+    89	\cd ..
+    90	\! pwd
+    91	\cd ../../Data/opentraveldata/
+    92	CREATE TABLE optd_airlines ( pk VARCHAR NOT NULL,  env_id BOOLEAN,  validity_from DATE,  validity_to VARCHAR,  "3char_code" VARCHAR,  "2char_code" VARCHAR,  num_code DECIMAL,  name VARCHAR,  name2 VARCHAR,  alliance_code VARCHAR,  alliance_status VARCHAR,  type VARCHAR,  wiki_link VARCHAR,  flt_freq DECIMAL);
+    93	\copy optd_airlines from './optd_airlines.csv' delimeter '^' csv header
+    94	\copy optd_airlines from './optd_airlines.csv' -d '^' csv header
+    95	SELECT * FROM friends WHERE upper(nombre) LIKE '%A%';
+    96	UPDATE facebook SET phone='444444444' WHERE name='eee';
+    97	\l
+    98	\d
+    99	SELECT * FROM optd_airlines;
+   100	\! pwd
+   101	\! ls
+   102	\copy optd_airlines './optd_airlines.csv' '^' csv header;
+   103	\copy optd_airlines FROM './optd_airlines.csv' DELIMETERS'^' csv header;
+   104	\copy optd_airlines FROM './optd_airlines.csv' DELIMETERS'^' csv header;
+   105	COPY optd_airlines FROM './optd_airlines.csv' DELIMETER '^' CSV H
+   106	\copy optd_airlines FROM './optd_airlines.csv' DELIMETERS'^' csv header;
+   107	COPY optd_airlinesFROM './optd_airlines.csv'DELIMITER '^'CSV HEADER;
+   108	\! pwd
+   109	/ls;
+   110	\l
+   111	/l;
+   112	\!cat ./optd_airlines.csv
+   113	COPY optd_airlinesFROM './optd_airlines.csv'DELIMITER '^'CSV HEADER;
+   114	COPY optd_airlinesFROM './optd_airlines.csv'DELIMITER '^'CSV HEADER;
+   115	COPY optd_airlinesFROM 'optd_airlines.csv'DELIMITER '^'CSV HEADER;
+   116	\copy optd_airlines
+   117	\copy optd_airlines from './optd_airlines.csv' delimiter '^' csv header;
+   118	SELECT * FROM optd_airlines LIMIT 1;
+   119	\! csvsql -d "^" -i postgersql optd_aircraft.csv
+   120	\! csvsql -d "^" -i postgresql optd_aircraft.csv
+   121	CREATE TABLE optd_aircraft ( iata_code VARCHAR NOT NULL,  manufacturer VARCHAR,  model VARCHAR NOT NULL,  iata_group VARCHAR,  iata_category VARCHAR,  icao_code VARCHAR,  nb_engines DECIMAL,  aircraft_type VARCHAR);
+   122	\copy optd_aircraft from './optd_aircraft.csv' delimiter '^' csv header;
+   123	SELECT * FROM optd_aircraft ORDER BY nb_engines DESC LIMIT 5;
+   124	SELECT * FROM optd_aircraft ORDER BY nb_engines ASC LIMIT 5;
+   125	SELECT * FROM optd_aircraft ORDER BY nb_engines DESC WHERE nb_engines IS NOT NULL LIMIT 5;
+   126	SELECT * FROM optd_aircraft WHERE nb_engines IS NOT NULL  ORDER BY nb_engines DESC LIMIT 5;
+   127	\d optd_aircraft
+   128	SELECT nb_engines, COUNT(nb_engines) AS total FROM optd_aircraft WHERE nb_engines IS NOT NULL GROUP BY nb_engines ORDER BY total DESC;
+   129	SELECT nb_engines, COUNT(nb_engines) AS total FROM optd_aircraft WHERE nb_engines IS NOT NULL;
+   130	SELECT COUNT(nb_engines) AS total FROM optd_aircraft WHERE nb_engines IS NOT NULL;

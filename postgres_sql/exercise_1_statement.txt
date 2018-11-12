@@ -1,0 +1,3 @@
+1. Generate 'Facebook' table where every person is identify with the name, age, city or residence, and email. The table should at least have 5 rows
+2. Write a query to obtais Facebook friends which are younger than 18 or older than 65
+3. Write a query to obtain all facebook friends which do not reside in Madrid

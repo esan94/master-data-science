@@ -1,0 +1,3 @@
+1. Import optd_aircraft.csv and optd_airlines.csv in postgres
+2. Which airplane has the highest number of engines? (optd_aircraft)
+3. What number of engines is most common on ariplanes? (optd_aircraft)
