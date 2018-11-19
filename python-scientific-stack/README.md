@@ -1,4 +1,4 @@
-# POSTGRES SQL
+# PYTHON SCIENTIFIC STACK
 
 Hello World Python Scientific Stack!
 
